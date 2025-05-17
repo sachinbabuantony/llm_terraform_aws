@@ -1,0 +1,5 @@
+# Ignore Terraform files
+infra/.terraform/*
+infra/terraform.tfstate.backup
+infra/terraform.tfstate
+llm.pem/

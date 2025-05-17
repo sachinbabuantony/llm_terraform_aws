@@ -1,0 +1,1670 @@
+html, body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Main layout elements */
+#leftPanel {
+    position: relative;
+    z-index: 50;
+}
+
+.main-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Left Panel Styles */
+#leftPanel {
+    background-color: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+    position: relative;
+    z-index: 50;
+}
+
+.file-list-header {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.file-list-header h5 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.file-group {
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.file-header {
+    padding: 10px 15px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #495057;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.file-header .file-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 30px);
+}
+
+.file-header .file-icon {
+    flex-shrink: 0;
+    color: #6c757d;
+}
+
+.file-pages {
+    padding: 5px 0;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 15px;
+}
+
+.file-item i {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.file-item:hover {
+    background-color: #f8f9fa;
+}
+
+.file-item.active-page {
+    background-color: #e7f1ff;
+}
+
+.file-item.active-page .page-thumbnail {
+    border-color: #0d6efd;
+}
+
+.upload-btn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.2s;
+    position: relative;
+    z-index: 51;
+}
+
+.upload-btn:hover {
+    background-color: #0b5ed7;
+}
+
+/* Main Content Styles */
+.main-content {
+    height: calc(100vh - 60px);
+    overflow: auto;
+    background-color: #f8f9fa;
+    flex: 1;
+    display: flex;
+    padding: 0 !important;
+    position: relative;
+    z-index: 1;
+}
+
+#dropZone {
+    border: 3px dashed #dee2e6;
+    border-radius: 12px;
+    background-color: white;
+    transition: all 0.3s;
+    width: 80%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+}
+
+#dropZone h5 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: #6c757d;
+}
+
+#dropZone p {
+    font-size: 18px;
+    color: #adb5bd;
+}
+
+#dropZone.dragover {
+    background-color: #e9ecef;
+    border-color: #007bff;
+    transform: scale(1.02);
+}
+
+#imageContainer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 20px;
+}
+
+#imageContainer img,
+#imageContainer canvas {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain;
+}
+
+#imageContainer canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+}
+
+/* Right Panel Styles */
+.ocr-results {
+    height: calc(100vh - 180px);
+    overflow-y: auto;
+    padding-bottom: 60px;
+}
+
+.word-item {
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.word-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #e9ecef;
+}
+
+.word-item-active {
+    background-color: #e7f1ff;
+    transform: scale(1.05);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.word-item.low-confidence {
+    background-color: #ffe6e6;
+    border-left: 3px solid #dc3545;
+}
+
+.card {
+   height: calc(100vh - 60px);
+}
+
+.table-responsive {
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.table {
+    margin-bottom: 0;
+}
+
+.table td {
+    white-space: nowrap;
+    padding: 8px;
+}
+
+/* Add these new styles */
+.resizer {
+    width: 5px;
+    height: 100%;
+    background: #e9ecef;
+    position: absolute;
+    cursor: col-resize;
+    z-index: 100;
+}
+
+.left-resizer {
+    right: 0;
+}
+
+.right-resizer {
+    left: 0;
+}
+
+.resizer:hover {
+    background: #dee2e6;
+}
+
+/* Modify existing styles */
+#leftPanel {
+    position: relative;
+    min-width: 200px;
+    max-width: 50%;
+    transition: none;
+}
+
+#rightPanel {
+    position: relative;
+    min-width: 200px;
+    max-width: 50%;
+    transition: none;
+    padding-left: 0;
+}
+
+/* Add these styles */
+.pagination-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.page-button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.page-button:hover {
+    background-color: #0056b3;
+}
+
+.page-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+    opacity: 0.65;
+}
+
+/* Update imageContainer style */
+#imageContainer {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 20px;
+}
+
+#imageContainer img,
+#imageContainer canvas {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto !important;
+    height: auto !important;
+    object-fit: contain;
+}
+
+#imageContainer canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+}
+
+/* Add these styles at the top */
+.navbar {
+    z-index: 100;
+    padding: 0.5rem 1rem;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.navbar-text {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-left: 1.5rem;
+}
+
+/* Add responsive adjustments */
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 0.85rem;
+    }
+    
+    .btn-sm {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.75rem;
+    }
+}
+
+/* Update flag icon styles */
+.flag-icon {
+    width: 20px;
+    height: 15px;
+    margin-right: 4px;
+    vertical-align: -2px;
+    object-fit: cover;
+}
+
+/* Style the language dropdown */
+.dropdown-menu {
+    min-width: 120px;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+/* Adjust navbar spacing */
+.navbar .btn-sm {
+    padding: 0.25rem 0.5rem;
+}
+
+.navbar .dropdown {
+    margin-right: 0.5rem;
+}
+
+/* Updated CSS styles */
+.navbar {
+   background-color: #3366ff;
+   height: 60px;
+   padding: 0 2rem;
+}
+
+.navbar-brand {
+   font-size: 1.25rem;
+   font-weight: 600;
+}
+
+.navbar-text {
+   font-size: 1.1rem;
+   opacity: 0.9;
+   margin-left: 1.5rem;
+}
+
+/* Language dropdown styling */
+.btn-language {
+   background-color: rgba(255, 255, 255, 0.2);
+   border: none;
+   color: white;
+   border-radius: 20px;
+   padding: 8px 20px;
+   font-size: 1.1rem;
+   display: flex;
+   align-items: center;
+   gap: 8px;
+}
+
+.btn-language:hover,
+.btn-language:focus {
+   background-color: rgba(255, 255, 255, 0.3);
+   color: white;
+}
+
+.flag-icon {
+   width: 20px;
+   height: 15px;
+   border-radius: 2px;
+}
+
+/* Help button styling */
+.btn-help {
+   background-color: rgba(255, 255, 255, 0.2);
+   border: none;
+   color: white;
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+   padding: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.btn-help:hover,
+.btn-help:focus {
+   background-color: rgba(255, 255, 255, 0.3);
+   color: white;
+}
+
+.btn-help i {
+   font-size: 1.4rem;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+   margin-top: 8px;
+   border-radius: 8px;
+   border: none;
+   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.dropdown-item {
+   padding: 8px 16px;
+   font-size: 0.9rem;
+   display: flex;
+   align-items: center;
+   gap: 8px;
+}
+
+.dropdown-item:hover {
+   background-color: #f5f5f5;
+}
+
+.word-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    padding: 5px;
+    align-items: flex-start;
+}
+
+.word-item {
+    display: inline-flex;
+    padding: 1px 3px;
+    margin: 0;
+    flex: 0 0 auto;
+}
+
+.word-input {
+    padding: 2px 2px;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    width: auto;
+    min-width: 0;
+    border: 2px solid;
+    background-color: white;
+    
+    /* Browser-Standardstile komplett deaktivieren */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none !important;
+    
+    /* Alle Transitions deaktivieren */
+    transition: none;
+    
+    /* Verhindern von Fokus-Highlighting */
+    -webkit-tap-highlight-color: transparent;
+}
+
+.word-input:focus {
+    outline: none !important;
+}
+
+.word-input:hover {
+    outline: none !important;
+}
+
+/* Styling für hohe Konfidenz */
+.word-item[data-confidence="high"] .word-input {
+    border-color: #28a745;
+}
+
+/* Styling für niedrige Konfidenz */
+.word-item[data-confidence="low"] .word-input {
+    border-color: #dc3545;
+}
+
+/* Aktives Element */
+.word-item.word-item-active .word-input {
+    background-color: #e7f1ff;
+}
+
+.filter-container {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.form-check-inline {
+    margin-right: 15px;
+}
+
+.form-check-input:checked {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+/* OCR Results Panel Styling */
+#rightPanel {
+    background-color: #f8f9fa;
+    border-left: 1px solid #dee2e6;
+}
+
+.ocr-stats-section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.stats-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.stats-header h5 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.stats-header i {
+    margin-right: 8px;
+}
+
+.confidence-badge {
+    font-size: 1.1rem;
+}
+
+.confidence-badge .badge {
+    padding: 8px 12px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    text-align: center;
+}
+
+.stat-item {
+    background-color: #f8f9fa;
+    padding: 12px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-value {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.filter-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.filter-header {
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.filter-options {
+    display: flex;
+    gap: 15px;
+}
+
+.form-check-label {
+    font-size: 0.9rem;
+    color: #495057;
+}
+
+.word-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin-top: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Update existing word-item styles */
+.word-item {
+    margin: 2px;
+    padding: 2px;
+    border-radius: 4px;
+    transition: transform 0.2s;
+}
+
+.word-item:hover {
+    transform: scale(1.05);
+}
+
+.word-item.word-item-active {
+    background-color: #e7f1ff;
+    transform: scale(1.05);
+}
+
+/* Add these styles */
+.ocr-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    color: #212529;
+    border-radius: 8px 8px 0 0;
+    margin: -15px -15px 15px -15px;
+}
+
+.ocr-header i {
+    font-size: 1.2rem;
+}
+
+.ocr-header h5 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.save-corrections-container {
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+    padding: 15px;
+    border-top: 1px solid #dee2e6;
+    margin: 0 -15px;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.05);
+    z-index: 10;
+}
+
+#saveCorrections {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+}
+
+#saveCorrections i {
+    font-size: 1.1rem;
+}
+
+.toast {
+    background-color: rgba(33, 37, 41, 0.95) !important;
+    color: white !important;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1050;
+    min-width: 250px;
+    text-align: center;
+}
+
+.toast.warning {
+    background-color: rgba(255, 193, 7, 0.95) !important;
+    color: #212529 !important;
+    border-left: 4px solid #ffc107;
+}
+
+.toast.error {
+    background-color: rgba(220, 53, 69, 0.95) !important;
+    color: white !important;
+    border-left: 4px solid #dc3545;
+}
+
+.toast.success {
+    background-color: rgba(40, 167, 69, 0.95) !important;
+    color: white !important;
+    border-left: 4px solid #28a745;
+}
+
+/* Refresh button styling */
+.btn-refresh {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.btn-refresh:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    transform: rotate(180deg);
+}
+
+.btn-refresh i {
+    font-size: 1.2rem;
+}
+/* Save Corrections button styling */
+#saveCorrections {
+    background-color: #0d6efd;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+}
+
+#saveCorrections:hover {
+    background-color: #0b5ed7;
+}
+
+#saveCorrections i {
+    font-size: 1.2rem;
+}
+
+/* Add these styles */
+.progress-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.progress-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+}
+
+.progress-container h4 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.progress {
+    height: 25px;
+    margin-bottom: 1rem;
+    background-color: #f0f0f0;
+}
+
+.progress-bar {
+    background-color: #3366ff;
+}
+
+#progressStatus {
+    text-align: center;
+    margin: 0;
+    color: #6c757d;
+}
+
+/* Add these new styles */
+.llm-processing-container {
+    padding: 15px;
+    border-top: 1px solid #dee2e6;
+    margin-top: auto;
+    position: relative;
+    z-index: 51;
+}
+
+.llm-btn {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #198754;
+    color: white;
+    border: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.2s;
+}
+
+.llm-btn:hover:not(:disabled) {
+    background-color: #157347;
+}
+
+.llm-btn:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+    opacity: 0.65;
+}
+
+.save-indicator {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    color: #198754;
+    opacity: 1;
+    z-index: 2;
+}
+
+.save-indicator i {
+    font-size: 1rem;
+    margin-left: 8px;
+}
+
+/* Make sure the page text doesn't overlap with the indicator */
+.file-item span:first-child {
+    margin-right: 8px;
+}
+
+.file-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.structured-results {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.structured-results table {
+    margin-bottom: 0;
+}
+
+.structured-results th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.structured-results td {
+    vertical-align: middle;
+    padding: 8px 12px;
+}
+
+.structured-results .text-muted {
+    font-size: 0.85rem;
+}
+
+.llm-analysis-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: calc(100vh - 100px);
+    position: relative;
+    z-index: 2;
+}
+
+.llm-analysis-header {
+    position: sticky;
+    top: 0;
+    background: white;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    z-index: 10;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.llm-analysis-header h4 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.llm-analysis-header h4 i {
+    color: #0d6efd;
+    font-size: 1.2rem;
+    background: #e7f1ff;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.llm-analysis-header p {
+    color: #6c757d;
+    margin: 4px 0 0 0;
+    font-size: 0.9rem;
+}
+
+/* Add subtle animation for the icon */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.llm-analysis-header h4 i {
+    animation: pulse 2s infinite ease-in-out;
+}
+
+/* Table container with sticky header */
+.table-container {
+    flex: 1;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Make sure the header stays sticky while scrolling */
+.analysis-table thead {
+    position: sticky;
+    top: 0;
+    background: #f8f9fa;
+    z-index: 5;
+}
+
+.analysis-table th {
+    position: sticky;
+    top: 0;
+    background: #f8f9fa;
+    z-index: 5;
+    border-bottom: 2px solid #e0e0e0;
+    padding: 12px 15px;
+}
+
+/* Ensure proper spacing in the container */
+.llm-analysis-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: calc(100vh - 100px);
+}
+
+/* Table styling */
+.analysis-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    position: relative;
+    z-index: 3;
+}
+
+.analysis-table thead {
+    background: #f8f9fa;
+}
+
+.analysis-table th {
+    position: sticky;
+    top: 0;
+    background: #f8f9fa;
+    z-index: 1;
+}
+
+/* Sticky header */
+.analysis-table thead {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 5;
+}
+
+.analysis-table th {
+    background: #f8f9fa;
+    padding: 12px 15px;
+    font-weight: 600;
+    color: #2c3e50;
+    text-align: left;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+/* Column widths */
+.analysis-table th:nth-child(1),
+.analysis-table td:nth-child(1) { 
+    width: 40%; 
+}
+
+.analysis-table th:nth-child(2),
+.analysis-table td:nth-child(2) { 
+    width: 60%; 
+}
+
+/* Cell styling */
+.analysis-table td {
+    padding: 8px 15px;
+    vertical-align: middle;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Variable name styling */
+.field-name {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+/* Value styling */
+.field-value {
+    color: #0d6efd;
+    font-family: monospace;
+}
+
+/* Source column styling */
+.field-source {
+    text-align: center;
+}
+
+.source-info {
+    display: none;
+}
+
+/* Row hover effect */
+.analysis-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Tooltip customization */
+.tooltip .tooltip-inner {
+    background-color: #2c3e50;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+}
+
+/* Smooth scrolling for the container */
+.main-content {
+    scroll-behavior: smooth;
+    padding: 0 !important;
+}
+
+/* Add field section styling */
+.add-field-section {
+    background-color: transparent;
+    padding: 0 0 15px 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.add-field-section h5 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.add-field-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto auto;
+    gap: 15px;
+    align-items: start;
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+.btn-add-field {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    height: 38px;
+    margin-top: 24px;
+}
+
+.btn-add-field:hover {
+    background: #218838;
+}
+
+/* Export button styling */
+.export-section {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 15px;
+}
+
+.btn-export {
+    background: #0d6efd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-export:hover {
+    background: #0b5ed7;
+    color: white;
+}
+
+/* Add these styles for the fixed footer */
+.llm-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 15px 0;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+
+.llm-footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Update add field section styles */
+.add-field-section {
+    background-color: white;
+    border-radius: 8px 8px 0 0;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+/* Update export section styles */
+.export-section {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-export {
+    background: #0d6efd;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-export:hover {
+    background: #0b5ed7;
+    color: white;
+}
+
+/* Fixed bottom section styles */
+.llm-bottom-section {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    padding: 15px;
+    margin-top: auto;
+}
+
+/* Remove any margins that might cause misalignment */
+.table-container, .llm-bottom-section {
+    margin: 0;
+}
+
+/* Add these new styles */
+.btn-delete-row {
+    background: none;
+    border: none;
+    color: #dc3545;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-delete-row:hover {
+    background-color: rgba(220, 53, 69, 0.1);
+}
+
+/* Update the table styles to accommodate the delete button */
+.structured-results td {
+    vertical-align: middle;
+    padding: 8px 12px;
+}
+
+.field-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    z-index: 4;
+}
+
+/* Add these new styles for editable fields */
+.editable-field {
+    padding: 4px 8px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.2s;
+    min-width: 100px;
+}
+
+.editable-field:hover {
+    border-color: #dee2e6;
+    background-color: #f8f9fa;
+    cursor: text;
+}
+
+.editable-field:focus {
+    outline: none;
+    border-color: #0d6efd;
+    background-color: white;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Update field styling */
+.field-name, .field-value {
+    font-family: inherit;
+}
+
+.field-name {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.field-value {
+    color: #0d6efd;
+}
+
+/* Add styles for the save indicator */
+.save-indicator {
+    color: #198754;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.save-indicator.show {
+    opacity: 1;
+}
+
+/* Add these styles for the add custom field section */
+.add-field-section {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.add-field-form {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-bottom: 8px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    height: 38px;
+}
+
+.btn-add-field {
+    padding: 8px 12px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 38px;
+    width: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 33px; /* Align with inputs by accounting for label height */
+}
+
+.btn-add-field:hover {
+    background: #218838;
+}
+
+/* Ensure consistent table styling */
+.analysis-table td {
+    vertical-align: middle;
+    padding: 8px 16px;
+}
+
+.analysis-table .field-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Make sure all editable fields have consistent styling */
+.editable-field {
+    width: 100%;
+    min-height: 24px;
+    line-height: 24px;
+}
+
+.btn-llm-suggest {
+    display: none;
+}
+
+.suggestions-list {
+    display: none;
+}
+
+.suggestion-item {
+    display: none;
+}
+
+/* Style for the save indicator */
+.save-indicator {
+    margin-left: auto;
+    color: #198754; /* Bootstrap success color */
+}
+
+.save-indicator i {
+    font-size: 1rem;
+}
+
+/* Ensure proper spacing when save indicator is present */
+.file-item .save-indicator {
+    margin-left: auto;
+    margin-right: 8px;
+}
+
+.page-info {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.page-info i {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.save-indicator {
+    display: flex;
+    align-items: center;
+    color: #198754;
+    margin-left: auto;
+}
+
+.save-indicator i {
+    font-size: 1rem;
+}
+
+/* When page is active */
+.file-item.active-page {
+    background-color: #e7f1ff;
+    color: #0d6efd;
+}
+
+.file-item.active-page .page-info i {
+    color: #0d6efd;
+}
+
+/* New styles for the green tick circle */
+.green-tick-circle {
+    width: 20px;
+    height: 20px;
+    background-color: #28a745;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto; /* This will push it to the right */
+}
+
+.green-tick-circle i {
+    color: white !important; /* Override any other color */
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* When page is active */
+.file-item.active-page {
+    background-color: #e7f1ff;
+    color: #0d6efd;
+}
+
+.file-item.active-page .page-info i {
+    color: #0d6efd;
+}
+
+/* LLM Processing button states */
+.llm-btn.disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+    opacity: 0.65;
+}
+
+.llm-btn.enabled {
+    background-color: #198754;
+    cursor: pointer;
+    opacity: 1;
+}
+
+/* Ensure page numbers are unique and clear */
+.file-pages {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.file-item[data-page] {
+    position: relative;
+}
+
+.green-tick-circle {
+    width: 20px;
+    height: 20px;
+    background-color: #28a745;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.green-tick-circle i {
+    color: white !important;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Add wrapper for image scaling */
+.image-wrapper {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Add these styles for the page preview thumbnails */
+.page-thumbnail {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #dee2e6;
+    flex-shrink: 0;
+}
+
+/* Adjust file list container to accommodate thumbnails */
+.file-pages {
+    max-height: calc(100vh - 250px);
+    overflow-y: auto;
+}
+
+/* Update hover state for file items */
+.file-item:hover {
+    background-color: #f8f9fa;
+}
+
+.file-item.active-page {
+    background-color: #e7f1ff;
+}
+
+.file-item.active-page .page-thumbnail {
+    border-color: #0d6efd;
+}
+
+/* Add these styles for the thumbnail preview modal */
+.thumbnail-preview-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    cursor: zoom-out;
+}
+
+.thumbnail-preview-modal.show {
+    display: flex;
+}
+
+.thumbnail-preview-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90vh;
+    overflow: auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.thumbnail-preview-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    cursor: default;
+}
+
+.thumbnail-preview-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.thumbnail-preview-close:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Add hover effect for thumbnails */
+.page-thumbnail {
+    cursor: zoom-in;
+    transition: transform 0.2s;
+}
+
+.page-thumbnail:hover {
+    transform: scale(1.05);
+}

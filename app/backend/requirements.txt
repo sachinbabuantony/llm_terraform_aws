@@ -1,0 +1,11 @@
+flask
+pdf2image
+pytesseract
+pillow
+opencv-python-headless
+PyMuPDF
+numpy
+boto3
+requests
+python-dotenv
+docling

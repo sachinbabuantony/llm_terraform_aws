@@ -1,0 +1,344 @@
+nohup: ignoring input
+ * Serving Flask app 'app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://213.136.72.36:8080
+[33mPress CTRL+C to quit[0m
+156.201.178.41 - - [21/Mar/2025 14:11:44] "[36mGET / HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 14:11:44] "[36mGET /css/style.css HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 14:11:44] "[36mGET /img/uk-flag.jpg HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 14:11:44] "[36mGET /img/Flag_of_Brazil.svg HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 14:11:44] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 14:11:45] "[36mGET /translations/en.json HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 14:11:45] "[36mGET /translations/en.json HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 14:11:45] "POST /cleanup HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 14:11:45] "[36mGET /translations/pt-br.json HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 14:11:54] "[36mGET / HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 14:11:54] "[36mGET /css/style.css HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 14:11:54] "[36mGET /img/uk-flag.jpg HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 14:11:54] "[36mGET /img/Flag_of_Brazil.svg HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 14:11:54] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 14:11:54] "[36mGET /translations/en.json HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 14:11:55] "[36mGET /translations/en.json HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 14:11:55] "POST /cleanup HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 14:11:55] "[36mGET /translations/pt-br.json HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 14:11:56] "[36mGET / HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 14:11:56] "[36mGET /css/style.css HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 14:11:56] "[36mGET /img/uk-flag.jpg HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 14:11:56] "[36mGET /img/Flag_of_Brazil.svg HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 14:11:56] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 14:11:56] "[36mGET /translations/en.json HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 14:11:57] "[36mGET /translations/en.json HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 14:11:57] "POST /cleanup HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 14:11:58] "[36mGET /translations/pt-br.json HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 14:16:36] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+156.201.178.41 - - [21/Mar/2025 14:16:36] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+156.201.178.41 - - [21/Mar/2025 14:16:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+156.201.178.41 - - [21/Mar/2025 14:16:36] "GET / HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 14:16:40] "GET / HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 14:16:40] "GET /css/style.css HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 14:16:40] "GET /img/uk-flag.jpg HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 14:16:41] "GET /js/main.js HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 14:16:42] "GET /translations/en.json HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 14:16:42] "GET /translations/en.json HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 14:16:42] "GET /img/Flag_of_Brazil.svg HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 14:16:42] "GET /translations/pt-br.json HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 14:16:42] "POST /cleanup HTTP/1.1" 200 -
+172.212.103.91 - - [21/Mar/2025 14:27:32] "GET / HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 14:34:34] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+156.201.178.41 - - [21/Mar/2025 14:34:34] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+156.201.178.41 - - [21/Mar/2025 14:34:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+156.201.178.41 - - [21/Mar/2025 14:34:34] "GET / HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 14:35:25] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+156.201.178.41 - - [21/Mar/2025 14:35:25] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+156.201.178.41 - - [21/Mar/2025 14:35:25] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+156.201.178.41 - - [21/Mar/2025 14:35:25] "GET / HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 14:36:47] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+156.201.178.41 - - [21/Mar/2025 14:36:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+156.201.178.41 - - [21/Mar/2025 14:36:47] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+156.201.178.41 - - [21/Mar/2025 14:36:47] "GET / HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 14:38:54] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+156.201.178.41 - - [21/Mar/2025 14:38:54] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+156.201.178.41 - - [21/Mar/2025 14:38:56] "GET / HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 14:38:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+156.201.178.41 - - [21/Mar/2025 14:58:57] code 400, message Bad request version ('\x9b\x0e\x10»<Í\x9a\x08¹¥Ci\x88YÝ{ã\x00')
+156.201.178.41 - - [21/Mar/2025 14:58:57] "[35m[1m\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03ZDÕ4\x99[ìh×z\x1e%ÇL\x86Ývªg+Vôl\x15Ö\x9c¬=\x07\x9bRØ É5\x99ÍF\x9c`\x13²³CL\x1e¡\x85\x9b\x0e\x10»<Í\x9a\x08¹¥Ci\x88YÝ{ã\x00 [0m" HTTPStatus.BAD_REQUEST -
+156.201.178.41 - - [21/Mar/2025 14:58:57] code 400, message Bad request version ('\x83,\x9b»O"ÈÆN\x00Hct\x8fR[fÄ\x16ë')
+156.201.178.41 - - [21/Mar/2025 14:58:57] "[35m[1m\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03\x93\x9cE\x8b\x9e´yÙÆ¸\x05mz¿ñ?Ú½Q¥Lâ\x9eJmR^ß[5p` \x1e\x95-\x09}\x95)Mx÷(Àí\x91\x8buä\x84ÎdS®t[+±\x92ââávb\x00 \x8a\x8a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06SÊÊ\x00\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01þ\x0d\x00Ú\x00\x00\x01\x00\x01E\x00 t½jÛöÜ\x13ã\x9ect?é(í-pD$Þ\x9b\x14~.\x07,\x8fðDç°`\x00°ºO¹%Â\x1f\x83,\x9b»O"ÈÆN\x00Hct\x8fR[fÄ\x16ë[0m" HTTPStatus.BAD_REQUEST -
+156.201.178.41 - - [21/Mar/2025 14:58:57] code 400, message Bad request version ('yzûPõª\x00Eô¾\x93§0\x02\x04\x81Póo\x8ba£')
+156.201.178.41 - - [21/Mar/2025 14:58:57] "[35m[1m\x16\x03\x01\x06 \x01\x00\x06\x9c\x03\x03\x1d`å\x88\x84\x9c\x1aSÃyÓd¥d¸1í\x1eêul´¦þ\x11\x9eÝZ\x12sðî AÖÓ\x92vw¾\x0eRØFV²¿E\x84\x00\x15äE¯Åihy\x08PÌh­+Á\x00 zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063\x1a\x1a\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00DÍ\x00\x05\x00\x03\x02h2ÿ\x01\x00\x01\x00þ\x0d\x00º\x00\x00\x01\x00\x01x\x00 ;_©\x8fQw,#Áj®´_ÇÕ¹vÛÆÓ\x10æ\x8f}j@íZ\x9a\x12>G\x00\x90\\aìu\x9d\x95G\x01cÌ~]ã\x16@¼¶\x18X\x81\x1a´q\x1f¶ìû\x00í\x8dC]3&ÇG¡57"nÎ\x9cE\x1dËkÃüeÊãüÛñsú\x7f\x9c\x18&ì2\x13Ê\x0c\x1f\x08¢háxE\x14:&µ\x06Æ¶h\x81sì\x83ZjDUk&¦¦\x88p\x90F\x90·õ\x08©ä4\x17É /±\x1b\x89£\x87Õµí\x13ÕÎt1\x1fÕÙ\x85ªí\x96\x88N»T\x19\x0d> #¤~ üÒ½ç\x00+\x00\x07\x06\x1a\x1a\x03\x04\x03\x03\x00\x12\x00\x00\x00#\x00\x00\x00\x0b\x00\x02\x01\x00\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x003\x04ï\x04í\x1a\x1a\x00\x01\x00\x11ì\x04Àõ\x0b \x00\x1d5R\x93\x83ø\x93\x90L\x87Fi\x85Ê\x18éÎ*ì\x18ð¥,gØ'4¤\x9f\x84æ\x92¸¨½Uè\x09P9R\x85\x9a0Û³:\x84\x04\x9c;\x84\x7f¹\x98ÃL\x87Ã\x84\x09/¸´\x15A\x0bl"tÍçì\x83g¦&9D\x1fÐ«\\ê\x00H\x93\x11½r¹\x15kH\x8e·ÖdÙuµøà2.l^6{¦\x05ð|\x09\x1c\x98\x19IÆß:\x8bñ¸\x8d&K5à\x8c|k¼\x96Y"CÁÆn¢$]æ;FM\x94S~\x1b\x8a¡Ñ?o¬\x8e½\x19fÊëkjá\x1aË\x1a¯SkBø\x93\x08\x8b\x01oç\x9b&\x9eb\x02G\x9b-$(\x8b\x05ø³ð±xCÉ\x0c\x9e÷\x95¯\x92\x1fÝâ-hÇ{ë¹$¤Jo\x86r@¨F\x03ùÛF\x83+z\x97÷<_éq\x12`\x09\x88å\x0e;\x98\x88\x84¹-ö\x11vñúN\x81PÌ$\x1bVB¼Nü\x09\x13/×w\x10Ûs¾%\x18ã\x1c´Ý\x123èìoëë\x9aÂù\x87\x11\x8aª÷\x91\x001ã¥tê\x13Ð«WìÆ·\x83\x81\x9b¹,¹õDc+øµ`\x19_$öË\x80£A[ê\x8cþ°^É!\x9dz³5CFP½\x14©\x9f×!¬ yzûPõª\x00Eô¾\x93§0\x02\x04\x81Póo\x8ba£[0m" HTTPStatus.BAD_REQUEST -
+156.201.178.41 - - [21/Mar/2025 14:58:57] code 400, message Bad request version ('\x98@A@\\÷B[)\x95\x91ùÒ\x93V×b')
+156.201.178.41 - - [21/Mar/2025 14:58:57] "[35m[1m\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03üZ£\x0cé\x1fÃA¢"ÍPÒj^¿]í\x7fÛ\x90o"¢\x866õl#¸¯\x92 ¤1cý\x99î:¡V\x99J7?V±ÒW\x17´jÁ\x97Dºc¤ð\x19(ã\x8a\x83\x00 zz\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93::\x00\x00DÍ\x00\x05\x00\x03\x02h2\x00-\x00\x02\x01\x01\x00\x17\x00\x00þ\x0d\x01\x1a\x00\x00\x01\x00\x01,\x00 eìÆc$w\x1d©ß\x808N}¢(Àin\x1fa\x80J\x98Ê2jº¤Ë»\x13E\x00ðîõÙ)\x13\x02\x91{o\x13R¢#ñ®\x87\x9c¬Å\x8a\x1d\x98@A@\\÷B[)\x95\x91ùÒ\x93V×b[0m" HTTPStatus.BAD_REQUEST -
+156.201.178.41 - - [21/Mar/2025 14:58:57] code 400, message Bad request version ('\x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s')
+156.201.178.41 - - [21/Mar/2025 14:58:57] "[35m[1m\x16\x03\x01\x06à\x01\x00\x06Ü\x03\x03pd\x9aÃ#Q©g\x82 Säè\x90a·\x9b6\x02\x7f\x14B/\x9aO\x1e\x12²ä+\x92W \x87Ï:\x8eÝ6iAÕ\x8f¦Âi>*\x99ádP\x90+\x95S¼åX½ïéþîo\x00 \x9a\x9a\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06s[0m" HTTPStatus.BAD_REQUEST -
+156.201.178.41 - - [21/Mar/2025 14:58:57] code 400, message Bad request version ('l`zf\x8a\x10\x03{?ã@»\x0e=×Zçlæs[Ñ\x8cÕ\x08Ë')
+156.201.178.41 - - [21/Mar/2025 14:58:57] "[35m[1m\x16\x03\x01\x06 \x01\x00\x06\x9c\x03\x03\x05f\x14fá³\x0d\x92O\x11J·Ì;\x1eU\x98Ýwzm"Gé?ò\x10\x9d\x85ÅM\x13 *z,Ká¿N\x94\x1fäCo$f\x09%¢\x95\x19\x9e¦¢½ä\x0f\x9c\x14W\x02ð\x80\x85\x00 **\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x063ÚÚ\x00\x00\x00\x12\x00\x00\x00\x05\x00\x05\x01\x00\x00\x00\x00þ\x0d\x00º\x00\x00\x01\x00\x01=\x00 ß\x8bÓÕ\x8a\x08\x9f%ñC¯2X\x97\x1c\x8c\x03Hm\x0fÃ2#ÅP.*ÄH¢µ\x0e\x00\x90\x18é×\x13\x9bÃ\x98ë[>\x1dl`zf\x8a\x10\x03{?ã@»\x0e=×Zçlæs[Ñ\x8cÕ\x08Ë[0m" HTTPStatus.BAD_REQUEST -
+156.201.178.41 - - [21/Mar/2025 14:59:00] "GET / HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 14:59:01] "GET /css/style.css HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 14:59:01] "GET /img/Flag_of_Brazil.svg HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 14:59:01] "GET /img/uk-flag.jpg HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 14:59:01] "GET /js/main.js HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 14:59:02] "GET /translations/en.json HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 14:59:02] "[36mGET /translations/en.json HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 14:59:02] "POST /cleanup HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 14:59:02] "GET /translations/pt-br.json HTTP/1.1" 200 -
+8.219.222.13 - - [21/Mar/2025 15:11:16] "GET / HTTP/1.0" 200 -
+8.219.222.13 - - [21/Mar/2025 15:11:16] "GET / HTTP/1.1" 200 -
+8.219.222.13 - - [21/Mar/2025 15:11:17] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+123.160.223.74 - - [21/Mar/2025 15:11:38] "GET / HTTP/1.1" 200 -
+123.160.223.75 - - [21/Mar/2025 15:11:38] "GET / HTTP/1.1" 200 -
+123.160.223.73 - - [21/Mar/2025 15:11:38] "GET / HTTP/1.1" 200 -
+123.160.223.74 - - [21/Mar/2025 15:11:38] "GET / HTTP/1.1" 200 -
+123.160.223.74 - - [21/Mar/2025 15:11:38] "GET / HTTP/1.1" 200 -
+111.7.96.170 - - [21/Mar/2025 15:11:38] "GET / HTTP/1.1" 200 -
+111.7.96.165 - - [21/Mar/2025 15:11:39] "GET / HTTP/1.1" 200 -
+123.160.223.72 - - [21/Mar/2025 15:11:39] "GET / HTTP/1.1" 200 -
+111.7.96.154 - - [21/Mar/2025 15:11:39] "GET / HTTP/1.1" 200 -
+111.7.96.170 - - [21/Mar/2025 15:11:40] "GET / HTTP/1.1" 200 -
+111.7.96.165 - - [21/Mar/2025 15:11:40] "GET / HTTP/1.1" 200 -
+123.160.223.74 - - [21/Mar/2025 15:11:40] "GET /js/main.js HTTP/1.1" 200 -
+123.160.223.74 - - [21/Mar/2025 15:11:40] "GET /js/main.js HTTP/1.1" 200 -
+111.7.96.154 - - [21/Mar/2025 15:11:40] "GET / HTTP/1.1" 200 -
+123.160.223.73 - - [21/Mar/2025 15:11:40] "GET /js/main.js HTTP/1.1" 200 -
+111.7.96.170 - - [21/Mar/2025 15:11:40] "GET /js/main.js HTTP/1.1" 200 -
+111.7.96.165 - - [21/Mar/2025 15:11:41] "GET /js/main.js HTTP/1.1" 200 -
+111.7.96.154 - - [21/Mar/2025 15:11:41] "GET /js/main.js HTTP/1.1" 200 -
+123.160.223.74 - - [21/Mar/2025 15:11:41] "GET /translations/en.json HTTP/1.1" 200 -
+123.160.223.74 - - [21/Mar/2025 15:11:41] "GET /translations/en.json HTTP/1.1" 200 -
+111.7.96.170 - - [21/Mar/2025 15:11:42] "GET /translations/en.json HTTP/1.1" 200 -
+123.160.223.73 - - [21/Mar/2025 15:11:42] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+111.7.96.170 - - [21/Mar/2025 15:11:42] "GET /translations/en.json HTTP/1.1" 200 -
+111.7.96.165 - - [21/Mar/2025 15:11:42] "GET /translations/en.json HTTP/1.1" 200 -
+111.7.96.170 - - [21/Mar/2025 15:11:42] "GET /translations/pt-br.json HTTP/1.1" 200 -
+111.7.96.165 - - [21/Mar/2025 15:11:42] "POST /cleanup HTTP/1.1" 200 -
+111.7.96.170 - - [21/Mar/2025 15:11:43] "POST /cleanup HTTP/1.1" 200 -
+123.160.223.73 - - [21/Mar/2025 15:11:43] "GET /translations/en.json HTTP/1.1" 200 -
+111.7.96.165 - - [21/Mar/2025 15:11:43] "GET /translations/en.json HTTP/1.1" 200 -
+123.160.223.72 - - [21/Mar/2025 15:11:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+123.160.223.72 - - [21/Mar/2025 15:11:43] "GET / HTTP/1.1" 200 -
+123.160.223.74 - - [21/Mar/2025 15:11:43] "GET /translations/en.json HTTP/1.1" 200 -
+123.160.223.75 - - [21/Mar/2025 15:11:43] "GET /translations/en.json HTTP/1.1" 200 -
+111.7.96.165 - - [21/Mar/2025 15:11:44] "GET /translations/pt-br.json HTTP/1.1" 200 -
+111.7.96.154 - - [21/Mar/2025 15:11:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+123.160.223.72 - - [21/Mar/2025 15:11:44] "GET /translations/en.json HTTP/1.1" 200 -
+123.160.223.73 - - [21/Mar/2025 15:11:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+111.7.96.170 - - [21/Mar/2025 15:11:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+111.7.96.165 - - [21/Mar/2025 15:11:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+123.160.223.72 - - [21/Mar/2025 15:11:46] "GET / HTTP/1.1" 200 -
+123.160.223.75 - - [21/Mar/2025 15:11:48] "GET / HTTP/1.1" 200 -
+123.160.223.72 - - [21/Mar/2025 15:11:49] "GET /js/main.js HTTP/1.1" 200 -
+111.7.96.177 - - [21/Mar/2025 15:11:49] "GET / HTTP/1.1" 200 -
+123.160.223.73 - - [21/Mar/2025 15:11:49] "GET / HTTP/1.1" 200 -
+123.160.223.73 - - [21/Mar/2025 15:11:50] "GET /js/main.js HTTP/1.1" 200 -
+111.7.96.177 - - [21/Mar/2025 15:11:50] "GET / HTTP/1.1" 200 -
+111.7.96.177 - - [21/Mar/2025 15:11:52] "GET /js/main.js HTTP/1.1" 200 -
+123.160.223.75 - - [21/Mar/2025 15:11:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+123.160.223.72 - - [21/Mar/2025 15:11:54] "GET /translations/en.json HTTP/1.1" 200 -
+123.160.223.73 - - [21/Mar/2025 15:11:54] "GET /translations/en.json HTTP/1.1" 200 -
+123.160.223.72 - - [21/Mar/2025 15:11:54] "GET /translations/en.json HTTP/1.1" 200 -
+123.160.223.73 - - [21/Mar/2025 15:11:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+123.160.223.73 - - [21/Mar/2025 15:11:55] "GET /translations/en.json HTTP/1.1" 200 -
+111.7.96.177 - - [21/Mar/2025 15:11:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+153.139.204.131 - - [21/Mar/2025 15:13:10] "GET / HTTP/1.0" 200 -
+112.46.217.158 - - [21/Mar/2025 15:29:11] "GET / HTTP/1.1" 200 -
+196.129.64.85 - - [21/Mar/2025 16:17:56] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+196.129.64.85 - - [21/Mar/2025 16:17:56] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+196.129.64.85 - - [21/Mar/2025 16:17:56] "GET / HTTP/1.1" 200 -
+196.129.64.85 - - [21/Mar/2025 16:17:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+196.129.64.85 - - [21/Mar/2025 16:18:04] "[36mGET / HTTP/1.1[0m" 304 -
+198.235.24.126 - - [21/Mar/2025 16:35:31] "GET / HTTP/1.1" 200 -
+59.88.106.164 - - [21/Mar/2025 16:44:32] "[33mGET /boaform/admin/formLogin?username=adminisp&psd=adminisp HTTP/1.0[0m" 404 -
+156.198.111.198 - - [21/Mar/2025 16:50:53] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+156.198.111.198 - - [21/Mar/2025 16:50:53] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+156.198.111.198 - - [21/Mar/2025 16:50:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+156.198.111.198 - - [21/Mar/2025 16:50:54] "GET / HTTP/1.1" 200 -
+172.212.102.251 - - [21/Mar/2025 17:42:32] "GET / HTTP/1.1" 200 -
+205.210.31.19 - - [21/Mar/2025 17:44:12] "GET / HTTP/1.1" 200 -
+112.46.217.98 - - [21/Mar/2025 17:47:12] "GET / HTTP/1.1" 200 -
+205.210.31.220 - - [21/Mar/2025 18:07:25] "GET / HTTP/1.1" 200 -
+147.185.132.117 - - [21/Mar/2025 18:43:44] "GET / HTTP/1.1" 200 -
+109.236.61.115 - - [21/Mar/2025 18:51:08] code 400, message Bad HTTP/0.9 request type ('Z¥\x01')
+109.236.61.115 - - [21/Mar/2025 18:51:08] "[35m[1mZ¥\x01 \x00\x00\x00\x00[0m" HTTPStatus.BAD_REQUEST -
+156.198.111.198 - - [21/Mar/2025 18:58:44] "[36mGET / HTTP/1.1[0m" 304 -
+156.198.111.198 - - [21/Mar/2025 18:58:54] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+156.198.111.198 - - [21/Mar/2025 18:58:54] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+156.198.111.198 - - [21/Mar/2025 18:58:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+156.198.111.198 - - [21/Mar/2025 18:58:54] "GET / HTTP/1.1" 200 -
+156.198.111.198 - - [21/Mar/2025 18:58:55] "[36mGET / HTTP/1.1[0m" 304 -
+156.198.111.198 - - [21/Mar/2025 18:58:58] "GET / HTTP/1.1" 200 -
+156.198.111.198 - - [21/Mar/2025 18:59:01] "GET / HTTP/1.1" 200 -
+196.129.69.34 - - [21/Mar/2025 18:59:15] "GET / HTTP/1.1" 200 -
+196.129.69.34 - - [21/Mar/2025 18:59:17] "GET / HTTP/1.1" 200 -
+156.198.111.198 - - [21/Mar/2025 18:59:32] "GET / HTTP/1.1" 200 -
+156.198.111.198 - - [21/Mar/2025 18:59:44] "GET / HTTP/1.1" 200 -
+156.198.111.198 - - [21/Mar/2025 19:00:10] "GET / HTTP/1.1" 200 -
+156.198.111.198 - - [21/Mar/2025 19:01:35] "GET / HTTP/1.1" 200 -
+156.198.111.198 - - [21/Mar/2025 19:02:27] code 400, message Bad request version ('\x00*ÊÊ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+156.198.111.198 - - [21/Mar/2025 19:02:27] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x81\\ÐXÓ\x09ên(»M/÷ô\x96aC¨¶XAÑ5Ø6í§³\x98bqè \x0d\x1dVð²ó]uy0ãù¢\x93VVÿW\x95qï<\x9båNñ\x0eõµ\x8b,\x0d\x00*ÊÊ\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À[0m" HTTPStatus.BAD_REQUEST -
+156.198.111.198 - - [21/Mar/2025 19:02:27] code 400, message Bad request version ('¾Ç\x00\x98\x87')
+156.198.111.198 - - [21/Mar/2025 19:02:27] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x034sk¯\x9aH\x85\x1eÏmÇÓþ\x7fC\x07\x9c*\\5ð3\x99ð²®.c\x80ü/\x04 \x96âÒ|Qá#Ð!\x87*,ú\x08Í\x81\x9cú\x88\x09¾Ç\x00\x98\x87[0m" HTTPStatus.BAD_REQUEST -
+156.198.111.198 - - [21/Mar/2025 19:02:27] code 400, message Bad request version ('\x05þA£Zò\x00\x00\x14À')
+156.198.111.198 - - [21/Mar/2025 19:02:27] "[35m[1m\x16\x03\x01\x00}\x01\x00\x00y\x03\x01\x8a¤>>g\x06»ÉÞ)Ë=­\x81Ö\x88S\x18\x0b\x0bf¶\x0dì\x9e\x85\x05þA£Zò\x00\x00\x14À[0m" HTTPStatus.BAD_REQUEST -
+156.198.111.198 - - [21/Mar/2025 19:02:27] code 400, message Bad request version ('Q\x8fn\x88ÊWÌri\x90v0]\x18x[\x80*\x8a/ÇÛ&¾/ï\x08»Ii\x03¥\x00*::\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À')
+156.198.111.198 - - [21/Mar/2025 19:02:27] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03p\x09Sã¢ÍùÕó\x9aõï\x1aÝ\x85\x05fôs¦d\x86iì{\x8b\x99µ>\x88÷\x8b Q\x8fn\x88ÊWÌri\x90v0]\x18x[\x80*\x8a/ÇÛ&¾/ï\x08»Ii\x03¥\x00*::\x13\x01\x13\x02\x13\x03À,À+Ì©À0À/Ì¨À[0m" HTTPStatus.BAD_REQUEST -
+156.198.111.198 - - [21/Mar/2025 19:02:27] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03>\x17\x06®þs\x9cÈ')
+156.198.111.198 - - [21/Mar/2025 19:02:27] "[35m[1m\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03>\x17\x06®þs\x9cÈ[0m" HTTPStatus.BAD_REQUEST -
+156.198.111.198 - - [21/Mar/2025 19:02:27] code 400, message Bad request syntax ('\x16\x03\x01\x00}\x01\x00\x00y\x03\x01à#äÏËï¤ëF\x00ôa\x9f=3õ£êWØp\x99R<¦\x07lV\x93óÍH\x00\x00\x14À')
+156.198.111.198 - - [21/Mar/2025 19:02:27] "[35m[1m\x16\x03\x01\x00}\x01\x00\x00y\x03\x01à#äÏËï¤ëF\x00ôa\x9f=3õ£êWØp\x99R<¦\x07lV\x93óÍH\x00\x00\x14À[0m" HTTPStatus.BAD_REQUEST -
+156.198.111.198 - - [21/Mar/2025 19:02:28] "GET / HTTP/1.1" 200 -
+156.198.111.198 - - [21/Mar/2025 19:02:58] "GET / HTTP/1.1" 200 -
+156.198.111.198 - - [21/Mar/2025 19:03:52] "GET / HTTP/1.1" 200 -
+156.198.111.198 - - [21/Mar/2025 19:05:42] "GET / HTTP/1.1" 200 -
+156.198.111.198 - - [21/Mar/2025 19:05:45] "GET / HTTP/1.1" 200 -
+156.198.111.198 - - [21/Mar/2025 19:05:47] "GET / HTTP/1.1" 200 -
+156.198.111.198 - - [21/Mar/2025 19:05:48] "GET / HTTP/1.1" 200 -
+156.198.111.198 - - [21/Mar/2025 19:05:51] "GET / HTTP/1.1" 200 -
+156.198.111.198 - - [21/Mar/2025 19:06:26] "GET / HTTP/1.1" 200 -
+198.235.24.89 - - [21/Mar/2025 20:08:14] "GET / HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 20:08:24] "[36mGET / HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 20:08:24] "GET /img/uk-flag.jpg HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 20:08:24] "[36mGET /css/style.css HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 20:08:24] "[36mGET /img/Flag_of_Brazil.svg HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 20:08:24] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 20:08:24] "[36mGET /translations/en.json HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 20:08:24] "[36mGET /translations/en.json HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 20:08:24] "POST /cleanup HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 20:08:24] "[36mGET /translations/pt-br.json HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 20:08:30] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+156.201.178.41 - - [21/Mar/2025 20:08:30] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+156.201.178.41 - - [21/Mar/2025 20:08:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+156.201.178.41 - - [21/Mar/2025 20:08:30] "GET / HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 20:11:09] "GET / HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 20:11:09] "GET /css/style.css HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 20:11:09] "GET /img/uk-flag.jpg HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 20:11:09] "GET /js/main.js HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 20:11:10] "GET /img/Flag_of_Brazil.svg HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 20:11:14] "GET /translations/en.json HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 20:11:14] "GET /translations/en.json HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 20:11:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+156.201.178.41 - - [21/Mar/2025 20:11:15] "GET /translations/pt-br.json HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 20:11:15] "GET / HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 20:11:15] "POST /cleanup HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 20:11:15] "[36mGET /css/style.css HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 20:11:15] "[36mGET /img/uk-flag.jpg HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 20:11:15] "[36mGET /img/Flag_of_Brazil.svg HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 20:11:15] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 20:11:15] "[36mGET /translations/en.json HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 20:11:15] "[36mGET /translations/en.json HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 20:11:15] "POST /cleanup HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 20:11:15] "GET /translations/pt-br.json HTTP/1.1" 200 -
+78.108.177.51 - - [21/Mar/2025 21:46:38] "GET / HTTP/1.0" 200 -
+156.201.178.41 - - [21/Mar/2025 21:50:38] "[36mGET / HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 21:50:38] "[36mGET /img/Flag_of_Brazil.svg HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 21:50:38] "[36mGET /css/style.css HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 21:50:38] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 21:50:38] "[36mGET /img/uk-flag.jpg HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 21:50:38] "[36mGET /translations/en.json HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 21:50:38] "[36mGET /translations/en.json HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 21:50:38] "POST /cleanup HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 21:50:38] "[36mGET /translations/pt-br.json HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 21:50:54] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+156.201.178.41 - - [21/Mar/2025 21:50:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+156.201.178.41 - - [21/Mar/2025 21:50:54] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+156.201.178.41 - - [21/Mar/2025 21:50:54] "GET / HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 21:57:56] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+156.201.178.41 - - [21/Mar/2025 21:57:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+156.201.178.41 - - [21/Mar/2025 21:57:56] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+156.201.178.41 - - [21/Mar/2025 21:57:57] "GET / HTTP/1.1" 200 -
+87.120.187.180 - - [21/Mar/2025 21:58:18] "[31m[1mCONNECT google.com:443 HTTP/1.1[0m" 405 -
+156.201.178.41 - - [21/Mar/2025 21:58:31] "[36mGET / HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 21:58:31] "[36mGET /img/Flag_of_Brazil.svg HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 21:58:31] "[36mGET /img/uk-flag.jpg HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 21:58:31] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 21:58:31] "[36mGET /css/style.css HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 21:58:32] "[36mGET /translations/en.json HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 21:58:32] "[36mGET /translations/en.json HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 21:58:32] "[36mGET /translations/pt-br.json HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 21:58:32] "POST /cleanup HTTP/1.1" 200 -
+198.235.24.211 - - [21/Mar/2025 22:08:21] "GET / HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 23:04:00] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+156.201.178.41 - - [21/Mar/2025 23:04:00] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+156.201.178.41 - - [21/Mar/2025 23:04:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+156.201.178.41 - - [21/Mar/2025 23:04:01] "GET / HTTP/1.1" 200 -
+207.38.88.185 - - [21/Mar/2025 23:18:23] "GET / HTTP/1.1" 200 -
+152.32.143.189 - - [21/Mar/2025 23:36:11] "GET / HTTP/1.1" 200 -
+152.32.143.189 - - [21/Mar/2025 23:36:12] code 400, message Bad request version ('äqÊ\x8b3Ý\x92H¦\x82(ÃÑ.r\x8a')
+152.32.143.189 - - [21/Mar/2025 23:36:12] "[35m[1m\x16\x03\x01\x00ò\x01\x00\x00î\x03\x03 \x12\x91\x92iÞ\x17,o\x16¬\x06nÑ\x04><Þ\x91¬b7»\x04¤ø¼\x84Ä%$à äqÊ\x8b3Ý\x92H¦\x82(ÃÑ.r\x8a[0m" HTTPStatus.BAD_REQUEST -
+152.32.143.189 - - [21/Mar/2025 23:36:12] code 400, message Bad HTTP/0.9 request type ('t3')
+152.32.143.189 - - [21/Mar/2025 23:36:12] "[35m[1mt3 12.1.2[0m" HTTPStatus.BAD_REQUEST -
+152.32.135.81 - - [21/Mar/2025 23:36:25] "GET / HTTP/1.1" 200 -
+152.32.135.81 - - [21/Mar/2025 23:36:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+152.32.135.81 - - [21/Mar/2025 23:36:26] "GET /js/main.js HTTP/1.1" 200 -
+152.32.135.81 - - [21/Mar/2025 23:36:27] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+152.32.135.81 - - [21/Mar/2025 23:36:27] "[33mGET /sitemap.xml HTTP/1.1[0m" 404 -
+156.201.178.41 - - [21/Mar/2025 23:49:26] "POST /cleanup HTTP/1.1" 200 -
+156.201.178.41 - - [21/Mar/2025 23:49:26] "[36mGET /translations/pt-br.json HTTP/1.1[0m" 304 -
+156.201.178.41 - - [21/Mar/2025 23:49:26] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+92.255.57.58 - - [22/Mar/2025 00:03:37] "[33mGET /securityRealm/user/admin/search/index?q=a HTTP/1.1[0m" 404 -
+92.255.57.58 - - [22/Mar/2025 00:06:45] "GET / HTTP/1.1" 200 -
+92.255.57.58 - - [22/Mar/2025 00:09:29] "[31m[1mPOST /Autodiscover/Autodiscover.xml HTTP/1.1[0m" 405 -
+92.255.57.58 - - [22/Mar/2025 00:11:53] "[31m[1mPOST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1[0m" 405 -
+84.73.105.54 - - [22/Mar/2025 00:11:58] "GET / HTTP/1.1" 200 -
+84.73.105.54 - - [22/Mar/2025 00:11:58] "GET /css/style.css HTTP/1.1" 200 -
+84.73.105.54 - - [22/Mar/2025 00:11:58] "GET /img/uk-flag.jpg HTTP/1.1" 200 -
+84.73.105.54 - - [22/Mar/2025 00:11:58] "GET /img/Flag_of_Brazil.svg HTTP/1.1" 200 -
+84.73.105.54 - - [22/Mar/2025 00:11:58] "GET /js/main.js HTTP/1.1" 200 -
+84.73.105.54 - - [22/Mar/2025 00:11:58] "GET /translations/en.json HTTP/1.1" 200 -
+84.73.105.54 - - [22/Mar/2025 00:11:58] "POST /cleanup HTTP/1.1" 200 -
+84.73.105.54 - - [22/Mar/2025 00:11:58] "[36mGET /translations/en.json HTTP/1.1[0m" 304 -
+84.73.105.54 - - [22/Mar/2025 00:11:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+84.73.105.54 - - [22/Mar/2025 00:11:58] "GET /translations/pt-br.json HTTP/1.1" 200 -
+[2025-03-22 00:12:07,845] ERROR in app: Error processing RNM.3.17.jpg: Error processing file RNM.3.17.jpg: tesseract is not installed or it's not in your PATH. See README file for more information.
+84.73.105.54 - - [22/Mar/2025 00:12:07] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+84.73.105.54 - - [22/Mar/2025 00:12:11] "[36mGET / HTTP/1.1[0m" 304 -
+84.73.105.54 - - [22/Mar/2025 00:12:11] "[36mGET /css/style.css HTTP/1.1[0m" 304 -
+84.73.105.54 - - [22/Mar/2025 00:12:11] "[36mGET /img/uk-flag.jpg HTTP/1.1[0m" 304 -
+84.73.105.54 - - [22/Mar/2025 00:12:11] "[36mGET /img/Flag_of_Brazil.svg HTTP/1.1[0m" 304 -
+84.73.105.54 - - [22/Mar/2025 00:12:11] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+84.73.105.54 - - [22/Mar/2025 00:12:11] "[36mGET /translations/en.json HTTP/1.1[0m" 304 -
+84.73.105.54 - - [22/Mar/2025 00:12:11] "[36mGET /translations/en.json HTTP/1.1[0m" 304 -
+84.73.105.54 - - [22/Mar/2025 00:12:11] "POST /cleanup HTTP/1.1" 200 -
+84.73.105.54 - - [22/Mar/2025 00:12:11] "[36mGET /translations/pt-br.json HTTP/1.1[0m" 304 -
+[2025-03-22 00:12:16,097] ERROR in app: Error processing RNM.3.17.jpg: Error processing file RNM.3.17.jpg: tesseract is not installed or it's not in your PATH. See README file for more information.
+84.73.105.54 - - [22/Mar/2025 00:12:16] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+84.73.105.54 - - [22/Mar/2025 00:12:20] "[36mGET /css/style.css HTTP/1.1[0m" 304 -
+84.73.105.54 - - [22/Mar/2025 00:12:29] "[36mGET / HTTP/1.1[0m" 304 -
+84.73.105.54 - - [22/Mar/2025 00:12:29] "[36mGET /css/style.css HTTP/1.1[0m" 304 -
+84.73.105.54 - - [22/Mar/2025 00:12:29] "[36mGET /img/uk-flag.jpg HTTP/1.1[0m" 304 -
+84.73.105.54 - - [22/Mar/2025 00:12:29] "[36mGET /img/Flag_of_Brazil.svg HTTP/1.1[0m" 304 -
+84.73.105.54 - - [22/Mar/2025 00:12:29] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+84.73.105.54 - - [22/Mar/2025 00:12:29] "[36mGET /translations/en.json HTTP/1.1[0m" 304 -
+84.73.105.54 - - [22/Mar/2025 00:12:29] "[36mGET /translations/en.json HTTP/1.1[0m" 304 -
+84.73.105.54 - - [22/Mar/2025 00:12:29] "POST /cleanup HTTP/1.1" 200 -
+84.73.105.54 - - [22/Mar/2025 00:12:29] "[36mGET /translations/pt-br.json HTTP/1.1[0m" 304 -
+[2025-03-22 00:12:33,584] ERROR in app: Error processing RNM.3.36.jpg: Error processing file RNM.3.36.jpg: tesseract is not installed or it's not in your PATH. See README file for more information.
+84.73.105.54 - - [22/Mar/2025 00:12:33] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+156.201.178.41 - - [22/Mar/2025 00:12:53] "[36mGET / HTTP/1.1[0m" 304 -
+156.201.178.41 - - [22/Mar/2025 00:12:53] "[36mGET /css/style.css HTTP/1.1[0m" 304 -
+156.201.178.41 - - [22/Mar/2025 00:12:53] "[36mGET /img/uk-flag.jpg HTTP/1.1[0m" 304 -
+156.201.178.41 - - [22/Mar/2025 00:12:53] "[36mGET /img/Flag_of_Brazil.svg HTTP/1.1[0m" 304 -
+156.201.178.41 - - [22/Mar/2025 00:12:53] "[36mGET /js/main.js HTTP/1.1[0m" 304 -
+156.201.178.41 - - [22/Mar/2025 00:12:54] "[36mGET /translations/en.json HTTP/1.1[0m" 304 -
+156.201.178.41 - - [22/Mar/2025 00:12:54] "[36mGET /translations/en.json HTTP/1.1[0m" 304 -
+156.201.178.41 - - [22/Mar/2025 00:12:54] "POST /cleanup HTTP/1.1" 200 -
+156.201.178.41 - - [22/Mar/2025 00:12:54] "[36mGET /translations/pt-br.json HTTP/1.1[0m" 304 -
+156.201.178.41 - - [22/Mar/2025 00:13:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+156.201.178.41 - - [22/Mar/2025 00:13:43] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+156.201.178.41 - - [22/Mar/2025 00:13:43] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+156.201.178.41 - - [22/Mar/2025 00:13:43] "GET / HTTP/1.1" 200 -
+156.201.178.41 - - [22/Mar/2025 00:14:48] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+156.201.178.41 - - [22/Mar/2025 00:14:48] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+156.201.178.41 - - [22/Mar/2025 00:14:48] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+156.201.178.41 - - [22/Mar/2025 00:14:48] "GET / HTTP/1.1" 200 -
+156.201.178.41 - - [22/Mar/2025 00:16:32] "[33mGET /apple-touch-icon-precomposed.png HTTP/1.1[0m" 404 -
+156.201.178.41 - - [22/Mar/2025 00:16:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+156.201.178.41 - - [22/Mar/2025 00:16:32] "[33mGET /apple-touch-icon.png HTTP/1.1[0m" 404 -
+156.201.178.41 - - [22/Mar/2025 00:16:32] "GET / HTTP/1.1" 200 -
+92.255.57.58 - - [22/Mar/2025 00:16:43] "[33mGET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1[0m" 404 -
+92.255.57.58 - - [22/Mar/2025 00:19:36] "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1" 200 -
+156.201.178.41 - - [22/Mar/2025 00:22:50] "POST /cleanup HTTP/1.1" 200 -
+156.201.178.41 - - [22/Mar/2025 00:22:50] "[36mGET /translations/pt-br.json HTTP/1.1[0m" 304 -
+156.201.178.41 - - [22/Mar/2025 00:22:50] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+92.255.57.58 - - [22/Mar/2025 00:23:10] "[33mGET /console/ HTTP/1.1[0m" 404 -
